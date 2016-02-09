@@ -223,6 +223,7 @@
     <Compile Include="Data\Presentation.cs" />
     <Compile Include="Data\Recall.cs" />
     <Compile Include="Data\Request.cs" />
+    <Compile Include="Data\Tag.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

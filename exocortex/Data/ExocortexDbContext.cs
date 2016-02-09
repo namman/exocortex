@@ -6,12 +6,10 @@ namespace exocortex.Data
 {
     public class ExocortexDbContext : DbContext
     {
-
-    }
-
-    public class Tag
-    {
-        public int Id { get; set; }
-        public int Name { get; set; }
+        public DbSet<Entry> Entries { get; set; }
+        public DbSet<Presentation> Presentations { get; set; }
+        public DbSet<Recall> Recalls { get; set; }
+        public DbSet<Request> Requests { get; set; }
+        public DbSet<Tag> Tags { get; set; }
     }
 }
