@@ -12,7 +12,7 @@ namespace exocortex.Data
         [ForeignKey("Entry")]
         public int EntryId { get; set; }
 
-        [Range(1, 3)]
+        [Range(1, 5)]
         public int SuccessLevel { get; set; }
 
     }

@@ -9,5 +9,6 @@ namespace exocortex.Data
         public DateTimeOffset DateTime { get; set; }
         [ForeignKey("Entry")]
         public int EntryId { get; set; }
+        public Entry Entry { get; set; }
     }
 }
