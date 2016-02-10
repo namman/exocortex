@@ -2,6 +2,7 @@
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
+using exocortex.Data.Models;
 
 namespace exocortex.Data
 {

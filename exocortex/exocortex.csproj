@@ -219,12 +219,12 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeController.cs" />
     <Compile Include="Data\TestDataInitializer.cs" />
-    <Compile Include="Data\Entry.cs" />
+    <Compile Include="Data\Models\Entry.cs" />
     <Compile Include="Data\ExocortexDbContext.cs" />
-    <Compile Include="Data\Presentation.cs" />
-    <Compile Include="Data\Recall.cs" />
-    <Compile Include="Data\Request.cs" />
-    <Compile Include="Data\Tag.cs" />
+    <Compile Include="Data\Models\Presentation.cs" />
+    <Compile Include="Data\Models\Recall.cs" />
+    <Compile Include="Data\Models\Request.cs" />
+    <Compile Include="Data\Models\Tag.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
