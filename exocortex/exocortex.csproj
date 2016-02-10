@@ -218,6 +218,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeController.cs" />
+    <Compile Include="Data\TestDataInitializer.cs" />
     <Compile Include="Data\Entry.cs" />
     <Compile Include="Data\ExocortexDbContext.cs" />
     <Compile Include="Data\Presentation.cs" />

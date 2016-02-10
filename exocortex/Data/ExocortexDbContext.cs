@@ -7,11 +7,15 @@ namespace exocortex.Data
 {
     public class ExocortexDbContext : DbContext
     {
+
+        public ExocortexDbContext()
+        { }
+
         public ExocortexDbContext(string nameOrConnectionString) : base(nameOrConnectionString)
         {
         }
 
-        
+
 
 
         public DbSet<Entry> Entries { get; set; }
