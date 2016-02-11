@@ -21,7 +21,7 @@ namespace exocortex
 
         public void InitializeDatabases()
         {
-            var context = new ExocortexDbContext(Properties.Settings.Default.connectionStringName);
+            var context = new ExocortexDbContext(Properties.Settings.Default.dataConnectionStringName);
             context.Database.Initialize(false);
 
 

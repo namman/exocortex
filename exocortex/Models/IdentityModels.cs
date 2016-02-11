@@ -29,7 +29,7 @@ namespace exocortex.Models
 
         public static ApplicationDbContext Create()
         {
-            return new ApplicationDbContext(Properties.Settings.Default.connectionStringName);
+            return new ApplicationDbContext(Properties.Settings.Default.identityConnectionStringName);
         }
     }
 }

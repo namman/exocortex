@@ -25,10 +25,19 @@ namespace exocortex.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("exocortex")]
-        public string connectionStringName {
+        [global::System.Configuration.DefaultSettingValueAttribute("exocortexData")]
+        public string dataConnectionStringName {
             get {
-                return ((string)(this["connectionStringName"]));
+                return ((string)(this["dataConnectionStringName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("exocortexIdentity")]
+        public string identityConnectionStringName {
+            get {
+                return ((string)(this["identityConnectionStringName"]));
             }
         }
     }
