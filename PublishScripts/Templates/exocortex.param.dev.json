@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "exocortex6360"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "Australia East"
+  },
+  "sku": {
+    "value": "Shared"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "05160032-7e1c-4fc2-bcd9-7a759bcb97d3"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-AustraliaEast"
+  }
+}
