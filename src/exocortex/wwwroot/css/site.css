@@ -1,18 +1,26 @@
-﻿
+﻿/* General things to make css layout easier */
+
+body {
+    box-sizing: border-box;
+}
+
+
 /* Tile grid*/
-  
- #wrap {
-      overflow: hidden;
+ 
+/* http://www.dwuser.com/education/content/creating-responsive-tiled-layout-with-pure-css/*/
+
+ #entries {
+      overflow: hidden; /* forces the containing block to expand and contain the floated elements.*/
     }
     .box {
       width: 20%;
-      padding-bottom: 20%;
+      padding-bottom: 20%; /* this is instead of specifying a h eight, which doesn't work'*/
       color: #FFF;
-      position: relative;
-      float: left;
+      position: relative; 
+      float: left; /* makes the boxes line up against one another, left to right, top to bottom*/
     }
     .innerContent {
-      position: absolute;
+      position: absolute; /* absolute position so that the content is not counted towards the parent's height'*/
       left: 1px;
       right: 1px;
       top: 1px;
@@ -21,3 +29,31 @@
       padding: 10px;
     }
 
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .box {
+      width: 100%;
+      padding-bottom: 100%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .box {
+      width: 50%;
+      padding-bottom: 50%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .box {
+      width: 25%;
+      padding-bottom: 25%;
+   }
+}
