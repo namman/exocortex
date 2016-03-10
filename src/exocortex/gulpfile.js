@@ -11,6 +11,8 @@ var paths = {
     webroot: "./wwwroot/"
 };
 
+
+
 paths.js = paths.webroot + "js/**/*.js";
 paths.minJs = paths.webroot + "js/**/*.min.js";
 paths.css = paths.webroot + "css/**/*.css";
@@ -29,7 +31,7 @@ gulp.task("clean:css", function (cb) {
 gulp.task("clean", ["clean:js", "clean:css"]);
 
 gulp.task("min:js", function () {
-    return gulp.src([paths.js, "!" + paths.minJs], { base: "." })
+    return gulp.src([paths.js, paths.jsLibs, "!" + paths.minJs], { base: "." })
         .pipe(concat(paths.concatJsDest))
         .pipe(uglify())
         .pipe(gulp.dest("."));
@@ -43,3 +45,19 @@ gulp.task("min:css", function () {
 });
 
 gulp.task("min", ["min:js", "min:css"]);
+
+gulp.task('moveToLibs', function (done) {
+    gulp.src([
+      'node_modules/angular2/bundles/angular2.dev.js',
+        'node_modules/angular2/bundles/angular2.dev.js',
+      'node_modules/angular2/bundles/angular2-polyfills.js',
+      'node_modules/angular2/bundles/angular2-polyfills.min.js',
+      'node_modules/rxjs/bundles/Rx.js',
+      'node_modules/rxjs/bundles/Rx.min.js',
+      'node_modules/systemjs/dist/system.src.js',
+      ]).pipe(gulp.dest('./wwwroot/lib/'));
+
+});
+
+
+
