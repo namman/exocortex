@@ -9,47 +9,47 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 // necessary to workaround bug: ///<reference path="../../node_modules/angular2/typings/browser.d.ts"/>
 ///<reference path="../node_modules/angular2/typings/browser.d.ts"/>
-System.register("entriesComponent", ['angular2/core'], function(exports_1, context_1) {
+System.register("rootComponent", ['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var core_1;
-    var AppComponent;
+    var RootComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            RootComponent = (function () {
+                function RootComponent() {
                 }
-                AppComponent = __decorate([
+                RootComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        template: 'My First Angular 2 App'
+                        selector: 'app-root',
+                        template: 'Success!'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], RootComponent);
+                return RootComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("RootComponent", RootComponent);
         }
     }
 });
-System.register("main", ['angular2/platform/browser', "entriesComponent"], function(exports_2, context_2) {
+System.register("main", ['angular2/platform/browser', "rootComponent"], function(exports_2, context_2) {
     "use strict";
     var __moduleName = context_2 && context_2.id;
-    var browser_1, entriesComponent_1;
+    var browser_1, rootComponent_1;
     return {
         setters:[
             function (browser_1_1) {
                 browser_1 = browser_1_1;
             },
-            function (entriesComponent_1_1) {
-                entriesComponent_1 = entriesComponent_1_1;
+            function (rootComponent_1_1) {
+                rootComponent_1 = rootComponent_1_1;
             }],
         execute: function() {
-            browser_1.bootstrap(entriesComponent_1.AppComponent);
+            browser_1.bootstrap(rootComponent_1.RootComponent);
         }
     }
 });

@@ -4,7 +4,7 @@
 
 import {Component} from 'angular2/core';
 @Component({
-    selector: 'my-app',
-    template: 'My First Angular 2 App'
+    selector: 'app-root',
+    template: 'Success!'
 })
-export class AppComponent { }
+export class RootComponent { }
